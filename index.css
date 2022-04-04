@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #141d26;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
+}
+
+.container {
+    padding: 0px 50px;
+}
+
+.mode{
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+  background-color: #c5c21f;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #c51f5d;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.add:active {
+  transform: scale(0.98);
+}
+
+.note {
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  height: 400px;
+  width: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.note .tools {
+  background-color: #c51f5d;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f1f1f1;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #a9a9a9;
+}
+
+.light-mode {
+    background-color: #ff6f69;
+}
